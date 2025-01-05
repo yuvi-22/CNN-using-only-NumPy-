@@ -75,6 +75,6 @@ here , again, we first initialize the gradient map , iterate over the filters, f
 
 finally , we use the calculated gradients and the learning rate  to update values 
 
-for 5 epochs of this (forward + finding loss function + backward pass) took around 3 hours 
+for 5 epochs of this (forward + finding loss function + backward pass) took around 1 hour
 and the loss was 1.732  
 🫠
