@@ -48,6 +48,9 @@ it returns the probabality distribution of all the scenarios and gives the index
 this concludes the forward pass
 now the main headache , the backward pass
 
+
+# Backward Prop
+
 firstly we find the loss function 
 cross entropy is the perfect loss fucntion in this scenario
 
