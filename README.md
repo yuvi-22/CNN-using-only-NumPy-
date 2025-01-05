@@ -14,7 +14,7 @@ and when i tried to train it (forward + back prop) , it took an exceptionally la
 
 then i reduced the number of filters ( used 4 before and then reduced to 1 ) , kept the fully connected layer as it is ( 10 neuron in each layer with their biases ) 
 and finally got an output
-but it took around 20 minutes to complete 1 epoch 
+but it took around 30 minutes to complete 1 epoch 
 
 so i think , filters and computation time are exponentially proportional 
 anyway here is the detailed report of what is happening : 
@@ -75,6 +75,6 @@ here , again, we first initialize the gradient map , iterate over the filters, f
 
 finally , we use the calculated gradients and the learning rate  to update values 
 
-for 5 epochs of this (forward + finding loss function + backward pass) took around 2 hours
+for 5 epochs of this (forward + finding loss function + backward pass) took around 3 hours
 and the loss was 1.732  
 🫠
