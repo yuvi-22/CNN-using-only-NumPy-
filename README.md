@@ -3,7 +3,8 @@
 this is my attempt to create a Convolutional Neural Network only using NumPy. 
 I tried to create all the functions , i.e  , convoluting over an image , Pooling ( in this case  , MaxPool)  , Activation function ( in this case , I used  ReLU for the hidden layer and the Softmax for the output layer) and a fully connected layer. 
 
-and then used this on the MNIST digit dataset 
+and then used this on the MNIST digit dataset ( image_retrival.py to parse throught the .idx files and get all the images, the label_retrival.py gets the labels) 
+
 well the forward pass works well with any number of filters .
 
 but obviously , it predicted the images waayy too wrong 
