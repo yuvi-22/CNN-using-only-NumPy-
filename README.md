@@ -53,3 +53,24 @@ cross entropy is the perfect loss fucntion in this scenario
 
 
 then 
+the gradient of logits are calculated 
+the gradient of weights in fc layer are is the dot product of the logits and the input vector 
+and the gradient of the input vector id the dot product of the  transpose of the actual fc weights and the logits
+this concludes the backward prop of the FC layer 
+
+coming to the flattening  layer : 
+the backward prop of the flattening  layer begins with reshaping the d_flattened ( gradient of the flatten layer) and this is stored in d_pool vairable 
+
+the d_pool along with the relu_output are inputs to the backward prop to the backward_pool layer 
+where we first initialize the gradient map , iterate through the filter, find the region , determine the index's of the maximum variable of that region and only that receives the gradient from d_pool , rest all values in the gradient map are zero 
+
+now the main part, the backward_convolve
+
+here , again, we first initialize the gradient map , iterate over the filters, find the region, compute the gradient using the formula
+( the gradient loss wrt to the filter is the sum of product of gradient at [i, j] in output d_conv[f,i,j] and the corresponding region
+
+finally , we use the calculated gradients and the learning rate  to update values 
+
+for 5 epochs of this (forward + finding loss function + backward pass) took around 3 hours 
+and the loss was 1.732  
+🫠
